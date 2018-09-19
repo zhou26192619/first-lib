@@ -1,4 +1,4 @@
-# Z-lib
+# first-lib
 
 > A Vue.js project
 
