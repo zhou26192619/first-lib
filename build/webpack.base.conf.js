@@ -4,7 +4,7 @@ const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
@@ -21,10 +21,7 @@ const createLintingRule = () => ({
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
-  entry: {
-    // app: './src/main.js',
-    app: './src/index.js'  //调试完后插件打包时的配置
-  },
+  entry: process.env.NODE_ENV === 'production' ? './src/index.js' : './src/main.js',
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -32,13 +29,6 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
 
-    //调试完后插件打包时的配置
-    // path: path.resolve(__dirname, '../dist'),
-    // publicPath: '',
-    // filename: 'Z-lib.js',
-    // library: 'Z-lib',
-    // libraryTarget: 'umd',
-    // umdNamedDefine: true
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],

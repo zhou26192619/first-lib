@@ -1,24 +1,27 @@
 {
-  "name": "first-lib",
-  "version": "1.0.0",
+  "name": "z-darwin",
+  "version": "1.0.01",
   "description": "A Vue.js project",
   "author": "zoar",
   "private": false,
-  "main": "dist/first-lib.js",
+  "main": "dist/z-darwin.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/zhou26192619/first-lib.git"
   },
+  "directories": {
+    "dist": "dist"
+  },
+  "keywords": [
+    "vue",
+    "z-darwin"
+  ],
   "files": [
     "dist",
     "src"
   ],
-  "keywords": [
-    "vue",
-    "first-lib"
-  ],
   "license": "MIT",
-  "homepage": "https://github.com/linmoer/first-lib",
+  "homepage": "https://github.com/zhou26192619/first-lib#readme",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -90,7 +93,7 @@
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.4"
   },
   "engines": {
     "node": ">= 6.0.0",

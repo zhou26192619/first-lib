@@ -1,8 +1,8 @@
 import Button from './packages/Button'
 
-const VueFlagList = {
-  install(Vue, options) {
-    Vue.component(Button.name, Button)
+export default {
+  install(Vue) {
+    Vue.component('Z-' + Button.name, Button)
+    console.log(Vue);
   }
 }
-export default VueFlagList
