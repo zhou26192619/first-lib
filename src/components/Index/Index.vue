@@ -1,7 +1,7 @@
 <template>
   <div style="height: 100%;width: 100%;">
-    <Z-Button text="aaaa"></Z-Button>
-    <Z-Button text="aaaa"></Z-Button>
+    <z-button text="aaaa"></z-button>
+    <z-button text="aaaa"></z-button>
   </div>
 </template>
 
