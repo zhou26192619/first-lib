@@ -1,10 +1,10 @@
 {
   "name": "z-darwin",
-  "version": "1.0.01",
+  "version": "1.0.02",
   "description": "A Vue.js project",
   "author": "zoar",
   "private": false,
-  "main": "dist/z-darwin.js",
+  "main": "dist/main.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/zhou26192619/first-lib.git"

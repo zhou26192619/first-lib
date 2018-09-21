@@ -25,16 +25,19 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   output: {
-    // path: config.build.assetsRoot,
-    // filename: utils.assetsPath('js/[name].[chunkhash].js'),
-    // chunkFilename: utils.assetsPath('js/[id].[chunkhash].js'),
+    path: config.build.assetsRoot,
+    filename:'[name].js',
+    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js'),
 
-    path: path.resolve(__dirname, '../dist/'),
-    publicPath: '/dist/',
-    filename: 'z-darwin.js',
+    // path: path.resolve(__dirname, '../dist/'),
+    // publicPath: '/dist/',
+    // filename: 'z-darwin.js',
     library: 'z-darwin',
     libraryTarget: 'umd',
     umdNamedDefine: true
+  },
+  externals: {
+    vue: 'vue'
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
